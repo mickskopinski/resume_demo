@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h1>FOOTER</h1>
+    <div class="flex flex-row">
+      <div class="basis-1/3">COLUMN 1 HERE</div>
+      <div class="basis-1/3">COLUMN 2 HERE</div>
+      <div class="basis-1/3">COLUMN 3 HERE</div>
+    </div>
   </div>
 </template>
 

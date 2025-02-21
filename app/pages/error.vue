@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>yo we had a problem</h1>
+    <h1>There was an error.</h1>
   </div>
 </template>
 

@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <UContainer>
     <AppHeader />
     <slot />
     <AppFooter />
-  </div>
+  </UContainer>
 </template>
 
 <script lang="ts" setup>
