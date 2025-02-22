@@ -1,11 +1,17 @@
 <template>
-  <div>
-    <div class="flex flex-row">
-      <div class="basis-1/3">COLUMN 1 HERE</div>
-      <div class="basis-1/3">COLUMN 2 HERE</div>
-      <div class="basis-1/3">COLUMN 3 HERE</div>
-    </div>
-  </div>
+  <UCard variant="soft">
+    <template #default>
+      <div class="italic text-right">{{ dateString }}</div>
+    </template>
+  </UCard>
 </template>
 
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { ref, onMounted } from "vue";
+
+const dateString = ref("");
+
+onMounted(() => {
+  dateString.value = new Date().toLocaleDateString();
+});
+</script>

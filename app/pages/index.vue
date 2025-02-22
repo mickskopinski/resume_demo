@@ -1,13 +1,30 @@
 <template>
   <div class="pb-8">
-    <h1>Welcome to the Home Page</h1>
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-5">
-      <div class="bg-green-500 text-white p-5">Item 1</div>
-      <div class="bg-green-500 text-white p-5">Item 2</div>
-      <div class="bg-green-500 text-white p-5">Item 3</div>
-      <div class="bg-green-500 text-white p-5">Item 4</div>
-      <div class="bg-green-500 text-white p-5">Item 5</div>
-      <div class="bg-green-500 text-white p-5">Item 6</div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5">
+      <UCard variant="subtle">
+        <template #header>
+          <h2><a href="about">About</a></h2>
+        </template>
+        <template #default></template>
+      </UCard>
+      <UCard variant="subtle">
+        <template #header>
+          <h2><a href="skills">Skills</a></h2>
+        </template>
+        <template #default></template>
+      </UCard>
+      <UCard variant="subtle">
+        <template #header>
+          <h2><a href="education">Education</a></h2>
+        </template>
+        <template #default></template>
+      </UCard>
+      <UCard variant="subtle">
+        <template #header>
+          <h2><a href="experience">Experience</a></h2>
+        </template>
+        <template #default></template>
+      </UCard>
     </div>
   </div>
 </template>
