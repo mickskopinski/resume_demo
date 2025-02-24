@@ -1,5 +1,5 @@
 <template>
-  <div class="pb-8">
+  <div class="pl-16 pb-8">
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5">
       <UCard variant="subtle">
         <template #header>

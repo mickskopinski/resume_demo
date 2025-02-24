@@ -1,5 +1,6 @@
 <template>
-  <div class="pb-8">
+  <div class="pl-16 pb-8">
+    <h2 class="text-2xl font-bold mb-4">My Education</h2>
     <div>Pennsylvania State University</div>
     <div>1995 - 1999</div>
     <div>Bachelor of Science in Mathematics</div>
