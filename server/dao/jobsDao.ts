@@ -15,7 +15,7 @@ export class JobsDao {
         endDate: thisItem.endDate,
         description: thisItem.descArray,
       };
-      jobsArray.push(newJob)
+      jobsArray.push(newJob);
     }
     return jobsArray;
   }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="font-sans">
     <div class="flex flex-row pt-4 pb-8">
       <div class="basis-1/4 flex justify-center items-center">
         <NuxtImg src="headshot-2.png" fit="inside" width="100" height="100" />

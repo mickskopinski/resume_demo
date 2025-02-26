@@ -1,4 +1,13 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-@source "../../../.nuxt/**";
+@source "../../../.nuxt/";
+
+@theme {
+  --font-sans: Inter;
+  --ui-bg: #f5f5f5;
+}
+
+body {
+  font-family: Inter;
+}
