@@ -4,10 +4,8 @@
     <UNavigationMenu
       :items="items"
       class="w-full justify-center pb-4"
-      :color="'neutral'"
+      :color="'info'"
       :variant="'pill'"
-      highlight
-      :highlight-color="'primary'"
       orientation="horizontal"
     />
     <slot />

@@ -1,5 +1,5 @@
 <template>
-  <UCard variant="soft">
+  <UCard variant="subtle">
     <template #default>
       <div class="italic text-right">{{ dateString }}</div>
     </template>
