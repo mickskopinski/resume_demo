@@ -8,7 +8,9 @@
       :variant="'pill'"
       orientation="horizontal"
     />
-    <slot />
+    <div class="pl-8 pr-8 pb-8">
+      <slot />
+    </div>
     <AppFooter />
   </UContainer>
 </template>

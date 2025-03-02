@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-8 pr-8 pb-8">
+  <div>
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 p-5">
       <template v-for="thisCategory in categories" :key="thisCategory.name">
         <UCard variant="subtle">

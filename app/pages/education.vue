@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-16 pb-8">
+  <div>
     <h2 class="text-2xl font-bold mb-4">My Education</h2>
     <div>Pennsylvania State University</div>
     <div>University Park Campus, State College, PA</div>

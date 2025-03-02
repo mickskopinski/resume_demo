@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-16 pb-8">
+  <div>
     <h2 class="text-2xl font-bold mb-4">Who I Am</h2>
     <p class="mb-4">
       I am a software developer with over 25 years of experience in developing

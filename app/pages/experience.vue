@@ -1,5 +1,5 @@
 <template>
-  <div class="pl-16 pb-8">
+  <div>
     <h2 class="text-2xl font-bold mb-4">My Experience</h2>
     <p class="mb-4">
       I have been fortunate to have a wide array of experience in application
