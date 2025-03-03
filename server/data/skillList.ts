@@ -171,4 +171,9 @@ export const skillsListData = [
     category: 7,
     skill: "Git",
   },
+  {
+    id: 33,
+    category: 7,
+    skill: "AWS",
+  },
 ];
