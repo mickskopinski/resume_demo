@@ -33,6 +33,6 @@
 
 <script lang="ts" setup>
 const outlineUi = {
-  body: "sm:p-0 p-0 bg-(--ui-bg-elevated)/50",
+  body: "sm:p-0 p-0",
 };
 </script>

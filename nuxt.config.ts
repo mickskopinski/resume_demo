@@ -18,6 +18,9 @@ export default defineNuxtConfig({
       },
     ],
   },
+  colorMode: {
+    preference: "light",
+  },
   image: {
     dir: "assets/images",
   },
