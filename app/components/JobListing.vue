@@ -2,18 +2,22 @@
   <div class="pb-8">
     <UCard variant="subtle">
       <template #header>
-        <div>
-          <span class="text-xl">{{ thisJob.title }}</span> at
-          {{ thisJob.company }}
+        <div class="text-xl font-semibold">{{ thisJob.title }}</div>
+        <div class="pl-2">
+          <div>{{ thisJob.company }}</div>
+          <div>{{ thisJob.startDate }} to {{ thisJob.endDate }}</div>
+          <div>{{ thisJob.location }}</div>
         </div>
-        <div class="pl-2">{{ thisJob.startDate }} to {{ thisJob.endDate }}</div>
-        <div class="pl-2">{{ thisJob.location }}</div>
       </template>
       <template #default>
         <div class="italic">
           <ul>
-            <li v-for="(jobdesc, index) in thisJob.description" :key="index">
-              - {{ jobdesc }}
+            <li
+              v-for="(jobdesc, index) in thisJob.description"
+              :key="index"
+              class="mb-2 ml-4 list-disc"
+            >
+              {{ jobdesc }}
             </li>
           </ul>
         </div>
