@@ -6,13 +6,4 @@ export default class JobsApi {
       method: "GET",
     });
   }
-
-  //   public async fetchChemicalById(
-  //     chemicalid: number,
-  //   ): Promise<IDbQueryResponse<IChemical>> {
-  //     //console.log("we are fetching a single chemical");
-  //     return $fetch(`/api/chemicals/${chemicalid}`, {
-  //       method: "GET",
-  //     });
-  //   }
 }
