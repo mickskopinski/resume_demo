@@ -1,5 +1,5 @@
 <template>
-  <div class="m-4">
+  <div class="m-3">
     <UCard variant="subtle">
       <template #default>
         <div class="italic text-right">{{ dateString }}</div>
