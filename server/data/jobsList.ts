@@ -1,7 +1,7 @@
 export const jobsList = [
   {
     id: "7",
-    title: "Senior Full-Stack Developer",
+    title: "Senior Application Developer, Full-Stack",
     company: "General Dynamics IT",
     location: "Duluth, MN/remote",
     startDate: "October 2016",
