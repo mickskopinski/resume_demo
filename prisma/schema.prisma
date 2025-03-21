@@ -1,0 +1,46 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model job_comments {
+  id       Int      @id @default(autoincrement())
+  job_id   Int
+  comment  String
+  created  DateTime @default(now()) @db.Timestamp(6)
+  modified DateTime @default(now()) @db.Timestamp(6)
+  jobs     jobs     @relation(fields: [job_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}
+
+model jobs {
+  id           Int            @id @default(autoincrement())
+  title        String         @db.VarChar(100)
+  company      String         @db.VarChar(100)
+  location     String         @db.VarChar(100)
+  start_date   String         @db.VarChar(50)
+  end_date     String         @db.VarChar(50)
+  created      DateTime       @default(now()) @db.Timestamp(6)
+  modified     DateTime       @default(now()) @db.Timestamp(6)
+  job_comments job_comments[]
+}
+
+model skill_category {
+  id       Int      @id @default(autoincrement())
+  name     String   @db.VarChar(100)
+  created  DateTime @default(now()) @db.Timestamp(6)
+  modified DateTime @default(now()) @db.Timestamp(6)
+  skills   skills[]
+}
+
+model skills {
+  id             Int            @id @default(autoincrement())
+  category_id    Int
+  name           String         @db.VarChar(100)
+  created        DateTime       @default(now()) @db.Timestamp(6)
+  modified       DateTime       @default(now()) @db.Timestamp(6)
+  skill_category skill_category @relation(fields: [category_id], references: [id], onDelete: NoAction, onUpdate: NoAction)
+}

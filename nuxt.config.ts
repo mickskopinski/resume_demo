@@ -7,7 +7,13 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  modules: ["@nuxt/eslint", "@nuxt/ui", "@nuxt/image", "@nuxt/fonts"],
+  modules: [
+    "@nuxt/eslint",
+    "@nuxt/ui",
+    "@nuxt/image",
+    "@nuxt/fonts",
+    "@prisma/nuxt",
+  ],
   css: ["~/assets/css/main.css"],
   fonts: {
     families: [

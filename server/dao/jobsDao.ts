@@ -1,22 +1,15 @@
 import type { IJob } from "~~/shared/types/IJob";
-import { jobsList } from "../data/jobsList";
+import { JobsDb } from "../data/db/jobs";
 
 export class JobsDao {
+  private jobsDb: JobsDb;
+
+  constructor() {
+    this.jobsDb = new JobsDb();
+  }
+
   public async getJobs(): Promise<IJob[]> {
-    const jobsArray: IJob[] = [];
-    for (let i = 0; i < jobsList.length; i++) {
-      const thisItem = jobsList[i];
-      const newJob: IJob = {
-        id: Number(thisItem.id),
-        title: thisItem.title,
-        company: thisItem.company,
-        location: thisItem.location,
-        startDate: thisItem.startDate,
-        endDate: thisItem.endDate,
-        description: thisItem.descArray,
-      };
-      jobsArray.push(newJob);
-    }
+    const jobsArray = this.jobsDb.getJobs();
     return jobsArray;
   }
 }

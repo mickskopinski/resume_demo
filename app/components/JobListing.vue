@@ -5,7 +5,7 @@
         <div class="text-xl font-semibold">{{ thisJob.title }}</div>
         <div class="pl-2">
           <div>{{ thisJob.company }}</div>
-          <div>{{ thisJob.startDate }} to {{ thisJob.endDate }}</div>
+          <div>{{ thisJob.start_date }} to {{ thisJob.end_date }}</div>
           <div>{{ thisJob.location }}</div>
         </div>
       </template>

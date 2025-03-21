@@ -20,6 +20,8 @@
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.9.0",
     "@nuxt/ui": "^3.0.0-alpha.13",
+    "@prisma/client": "^6.5.0",
+    "@prisma/nuxt": "^0.3.0",
     "@tailwindcss/vite": "^4.0.9",
     "aws-amplify": "^6.13.2",
     "nuxt": "^3.15.4",
@@ -29,11 +31,14 @@
   "devDependencies": {
     "@iconify-json/heroicons": "^1.2.2",
     "@nuxt/eslint": "^1.1.0",
+    "@types/node": "^22.13.10",
     "@vue/typescript-plugin": "^2.2.2",
     "eslint": "^9.20.1",
     "eslint-config-prettier": "^10.0.1",
     "eslint-plugin-prettier": "^5.2.3",
     "prettier": "^3.5.1",
-    "typescript": "^5.7.3"
+    "prisma": "^6.5.0",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
   }
 }
